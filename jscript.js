@@ -1,10 +1,19 @@
 function computerPlay(){
     const arr = ['rock', 'paper', 'scissors']
-    
-    //console.log("R-P-S")
     let i = Math.floor(Math.random() * 3);
-    //console.log(i)
-    console.log(arr[i])
+    return arr[i];
 }
 
-computerPlay()
+let a = computerPlay()
+console.log(a)
+
+function playRound(x,y){
+    if (x == 'rock' && y == 'rock'){
+        console.log('its a tie')
+    }
+    else if (x == 'paper' && y == 'rock'){
+        console.log('you loose!')
+    }
+}
+b = 'rock'
+playRound(a,b)
