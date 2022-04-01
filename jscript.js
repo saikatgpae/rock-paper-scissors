@@ -1,13 +1,11 @@
 
-var arr = ['rock', 'paper', 'scissors']
+// randomly generate 1 integer between 1 - 3
 function computerPlay(){
-    let i = Math.floor(Math.random() * 3);
-    
-    return arr[i];
+    var arr = ['rock', 'paper', 'scissors']
+    return arr[Math.floor(Math.random() * 3)];
 }
 
-let a = computerPlay()
-console.log('computer',a)
+
 
 function playRound(x,y){
     if (x == 'rock' && y == 'rock' || x == 'paper' && y == 'paper' || x == 'scissors' && y == 'scissors'){
@@ -22,6 +20,12 @@ function playRound(x,y){
     
 }
 
-b = arr[Math.floor(Math.random() * 3)]
-console.log('u',b)
-playRound(a,b)
+for (n=0; n<5; n++){
+    input = prompt('please enter ur choise rock/scissors/paper : ')
+    b = input.toLocaleLowerCase()
+    console.log('u',b)
+    a = computerPlay()
+    console.log('computer',a)
+    playRound(a,b)
+}
+
