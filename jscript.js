@@ -1,12 +1,12 @@
 
-// randomly generate 1 integer between 1 - 3
+// randomly generate 1 integer between 1 - 3 to find the computer input
 function computerPlay(){
     var arr = ['rock', 'paper', 'scissors']
     return arr[Math.floor(Math.random() * 3)];
 }
 
 
-
+// comparing all inputs and returnig the result
 function playRound(x,y){
     if (x == 'rock' && y == 'rock' || x == 'paper' && y == 'paper' || x == 'scissors' && y == 'scissors'){
         const result1 = 'tie'
@@ -25,6 +25,8 @@ function playRound(x,y){
     }
     
 }
+
+//comparing the actual inputs users and computers
 var count = 0;
 for (n=0; n<5; n++){
     input = prompt('please enter ur choise rock/scissors/paper : ')
@@ -50,5 +52,16 @@ for (n=0; n<5; n++){
         console.log(count)
     }
 }
+
+// rpinting the final result
 console.log('your final score is :',count)
+if(count <0){
+    console.log('you lost')
+}
+else if(count >0){
+    console.log('you are the winner!!')
+}
+else{
+    console.log('its a tie')
+}
 
