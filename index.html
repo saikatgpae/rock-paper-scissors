@@ -2,12 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <script type="text/javascript" src="jscript.js"></script>
+        <title>S-R-P</title>
+        
     </head>
     <body>
-        hello!
-        Please visit console.
-        please press
-        cmd + option + c
+        
+       <div class="button">
+            <button class="rock" onclick="rock()">rock</button>
+            <button class="paper" onclick="paper()">paper</button>
+            <button class="scissors" onclick="scissors()">scissors</button>
+       </div>
+            <div style="display: flex; color: blue;"> computer :  
+            <div id="test"></div>
+       </div>
+        <div style="display: flex;">
+            <div style="color: green;">you :  </div>
+            <div id="test1"></div>
+        </div>
+        <div class="result" style="color: red;"></div>
+        <script type="text/javascript" src="jscript.js"></script>
     </body>
 </html>
