@@ -1,0 +1,67 @@
+ /*Back ground color of the whole body*/
+ body{
+     background-color: rgb(233, 234, 210);
+ }
+ 
+ /* Count div css*/
+ .count{
+    display: flex;
+    height: 3ß0px;
+    font-size: 30px;
+    margin: 30px;
+    color: rgb(228, 8, 37);
+    font-weight: bold;   
+}
+.count div{
+    flex: 1; 
+    font-size: 30 px; 
+    display: flex;     
+}
+
+
+/* Button CSS*/
+.button{
+    display: flex;
+}
+.button button{
+  background: rgb(172, 172, 190);
+  height: 120px;
+  flex: 1 0 0%;
+  font-size: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 40px;
+  margin: 40px;
+  text-size-adjust: auto;
+}
+
+/* Game CSS*/
+.game{
+    display: flex;
+    margin: 40px;
+    font-size: 30px;
+}
+.game div{
+    flex: 1 1 20%;
+    color: green;
+}
+
+/*Computer result div*/
+.computer{
+    display: flex;
+   margin: 40px;
+    font-size: 30px;
+}
+.computer div{
+    flex: 1;
+}
+
+/*Final Result CSS*/
+.finalResultContainer{
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+}
+.finalResultContainer div{
+    flex: 1;
+}

@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>S-R-P</title>
-        
+        <meta charset="utf-8" http-equiv="Content-Type" content="text/html">
+        <title>R-P-S</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <h1 style="font-size: 25px; color:blue;">Rock - Paper - Scissor</h1>
+        <div class="count">
+            <div class="count-text">
+                <div></div>
+                <div>Count :</div>
+                <div class="counter" style="text-align: left;"></div>
+                <div></div>
+                <div></div>
+            </div>   
+        </div>
+
+
+        <div style="color: blue;" class="computer">   
+            <div></div>
+            <div>computer :</div>
+            <div id="test" style="color: green;"></div>
+            <div>Game Result</div>
+            <div></div>
+        </div>
+
+        <div class="game">
+            <div></div>
+            <div style="color: blue;">you :</div>
+            <div id="test1"></div>
+            <div class="result" style="color: red;"></div>
+            <div></div>
+        </div>
         
+
+
        <div class="button">
             <button class="rock" onclick="rock()">rock</button>
             <button class="paper" onclick="paper()">paper</button>
-            <button class="scissors" onclick="scissors()">scissors</button>
+            <button class="scissors" onclick="scissors()">scissors</button>   
        </div>
-            <div style="display: flex; color: blue;"> computer :  
-            <div id="test"></div>
-       </div>
-        <div style="display: flex;">
-            <div style="color: green;">you :  </div>
-            <div id="test1"></div>
+
+
+        
+        <div class="finalResultContainer">
+            <div style="color: blue;">Your Score :</div>
+            <div class="final-result"></div>
+            <div class="final-result-text" style="color: deeppink; font-size: 50px;"></div>
+            <div></div>
         </div>
-        <div class="result" style="color: red;"></div>
         <script type="text/javascript" src="jscript.js"></script>
     </body>
 </html>
